@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PocketGuruAI: Mindfulness & Meditation App | Coming Soon!</title>
+        <title>PocketGuruAI: Mindfulness & Meditation App | Coming Soon! </title>
         <meta
           name="description"
           content="PocketGuruAI: Revolutionizing mental wellness with AI-driven guidance. Transforming support services. Coming soon to App Store & Google Play."
