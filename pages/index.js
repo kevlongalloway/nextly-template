@@ -38,9 +38,10 @@ export default function Home() {
 
       <Navbar />
       <Hero />
-      <SectionTitle
+     <SectionTitle
         pretitle="Revolutionizing Mental Wellness"
-        title="Welcome to PocketGuruAI">
+        title="Experience the Power of PocketGuruAI"
+      >
         Transform your mental health with PocketGuruAI, an AI-powered app designed to provide personalized guidance and support for mindfulness and meditation practices. Join us in revolutionizing the way we approach mental well-being.
       </SectionTitle>
       <Benefits data={benefitOne} />
