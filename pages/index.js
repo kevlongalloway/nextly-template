@@ -2,56 +2,69 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
+
+import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
+import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 
-const Home = () => {
+//import dynamic from "next/dynamic";
+
+// const Video = dynamic(() => import("../components/video"));
+
+// const Benefits = dynamic(() => import("../components/benefits"));
+// const Footer = dynamic(() => import("../components/footer"));
+// const Testimonials = dynamic(() => import("../components/testimonials"));
+// const Cta = dynamic(() => import("../components/cta"));
+// const Faq = dynamic(() => import("../components/faq"));
+
+// const PopupWidget = dynamic(() => import("../components/popupWidget"));
+
+export default function Home() {
   return (
     <>
       <Head>
-        <title>PocketGuruAI: Mindfulness & Meditation App | Coming Soon!</title>
+        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
         <meta
           name="description"
-          content="PocketGuruAI: Revolutionizing mental wellness with AI-driven guidance. Transforming support services. Coming soon to App Store & Google Play."
+          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Revolutionizing Mental Wellness"
-        title="Welcome to PocketGuruAI"
-      >
-        Transform your mental health with PocketGuruAI, an AI-powered app designed to provide personalized guidance and support for mindfulness and meditation practices. Join us in revolutionizing the way we approach mental well-being.
+        pretitle="Nextly Benefits"
+        title=" Why should you use this landing page">
+        Nextly is a free landing page & marketing website template for startups
+        and indie projects. Its built with Next.js & TailwindCSS. And its
+        completely open-source.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        pretitle="Watch a Demo"
-        title="See PocketGuruAI in Action"
-      >
-        Experience the power of PocketGuruAI through our demo video. Discover how our app can help you achieve mental clarity, reduce stress, and enhance overall well-being.
+        pretitle="Watch a video"
+        title="Learn how to fullfil your needs">
+        This section is to highlight a promo or demo video of your product.
+        Analysts says a landing page with video has 3% more conversion rate. So,
+        don't forget to add one. Just like this.
       </SectionTitle>
       <Video />
       <SectionTitle
-        pretitle="What Our Users Say"
-        title="Testimonials"
-      >
-        Hear from our users about their transformative journey with PocketGuruAI. Join the community and be a part of this positive change in mental health support.
+        pretitle="Testimonials"
+        title="Here's what our customers said">
+        Testimonails is a great way to increase the brand trust and awareness.
+        Use this section to highlight your popular customers.
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Have questions? We have answers. Explore our FAQs to learn more about PocketGuruAI and how it can benefit you on your path to improved mental well-being.
+        Answer your customers possible questions here, it will increase the
+        conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
       <Cta />
